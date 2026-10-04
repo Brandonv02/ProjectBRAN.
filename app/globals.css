@@ -159,6 +159,14 @@
   will-change: opacity, transform;
 }
 
+/* Demos con marca propia (p. ej. /demos/barber): el foco visible usa el
+   acento de esa marca vía `outline`, así que se anula el anillo azul de
+   ELEVA de `:focus-visible` sin tocar el resto del sitio. Fuera de
+   @layer para que gane siempre sobre la regla de base. */
+.demo-scope :focus-visible {
+  box-shadow: none;
+}
+
 /* ───────────────────────────────────────────────────────────────
    Accesibilidad: sin movimiento de posición si el sistema lo pide
    ─────────────────────────────────────────────────────────────── */
