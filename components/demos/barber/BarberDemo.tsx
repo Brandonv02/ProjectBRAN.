@@ -47,7 +47,7 @@ function BarberFooter() {
       <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-1 border-t border-white/10 pt-6 text-xs text-[#726d64] sm:flex-row sm:items-center sm:justify-between">
         <p>Todos los datos de esta demo son ficticios.</p>
         <Link href="/" className="text-[#aaa49a] underline-offset-4 transition-colors hover:text-[#d6bd99] hover:underline focus-visible:outline-2 focus-visible:outline-[#c5a477]">
-          Digital experience by ELEVA ↗
+          Digital experience by BRAN. ↗
         </Link>
       </div>
     </footer>
@@ -217,7 +217,7 @@ export function BarberDemo() {
                       alt={item.alt}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className={`object-cover transition duration-700 ease-eleva group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100 ${item.position ?? ""}`}
+                      className={`object-cover transition duration-700 ease-bran group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100 ${item.position ?? ""}`}
                     />
                     <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/70 to-transparent" />
                     <span className="absolute bottom-3 left-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/85">
@@ -271,7 +271,7 @@ export function BarberDemo() {
                       alt={`Retrato conceptual de ${member.name}`}
                       fill
                       sizes="(max-width: 640px) 100vw, 33vw"
-                      className="object-cover transition duration-700 ease-eleva group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+                      className="object-cover transition duration-700 ease-bran group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                     />
                     <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-[#0c0b0a] via-[#0c0b0a]/10 to-transparent" />
                   </div>
@@ -279,7 +279,7 @@ export function BarberDemo() {
                   <p className="mt-1 text-sm text-[#c5a477]">{member.role}</p>
                   <span
                     aria-hidden="true"
-                    className="mt-3 block h-px w-8 bg-[#c5a477]/50 transition-[width] duration-500 ease-eleva group-hover:w-16"
+                    className="mt-3 block h-px w-8 bg-[#c5a477]/50 transition-[width] duration-500 ease-bran group-hover:w-16"
                   />
                   <p className="mt-3 text-[10px] uppercase tracking-wider text-[#817b72]">Perfil ficticio de demostración</p>
                 </Reveal>

@@ -30,7 +30,7 @@ export function MenuTabs({ categories }: { categories: MenuCategory[] }) {
               aria-controls={`${baseId}-panel-${category.id}`}
               onClick={() => setActiveId(category.id)}
               className={cn(
-                "relative pb-2 text-sm font-semibold uppercase tracking-[0.12em] transition-colors duration-200 ease-eleva focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#c1603c]",
+                "relative pb-2 text-sm font-semibold uppercase tracking-[0.12em] transition-colors duration-200 ease-bran focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#c1603c]",
                 selected ? "text-[#241c15]" : "text-[#8a7461] hover:text-[#241c15]",
               )}
             >
@@ -38,7 +38,7 @@ export function MenuTabs({ categories }: { categories: MenuCategory[] }) {
               <span
                 aria-hidden="true"
                 className={cn(
-                  "absolute inset-x-0 bottom-0 h-[2px] bg-[#c1603c] transition-opacity duration-200 ease-eleva",
+                  "absolute inset-x-0 bottom-0 h-[2px] bg-[#c1603c] transition-opacity duration-200 ease-bran",
                   selected ? "opacity-100" : "opacity-0",
                 )}
               />

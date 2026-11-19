@@ -23,7 +23,7 @@ export function ContactLink({
   if (link.isPlaceholder || !link.href) {
     return (
       <span
-        data-eleva-placeholder={link.envKey}
+        data-bran-placeholder={link.envKey}
         title={`Pendiente de configurar: ${link.envKey}`}
         className={cn("text-muted", className)}
       >
@@ -40,7 +40,7 @@ export function ContactLink({
       aria-label={ariaLabel}
       {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className={cn(
-        "text-silver transition-colors duration-150 ease-eleva hover:text-white",
+        "text-silver transition-colors duration-150 ease-bran hover:text-ink",
         className,
       )}
     >

@@ -20,9 +20,9 @@ export function Footer() {
     <footer className="border-t border-line-soft bg-void">
       <Container>
         {/* Repetición del CTA para quien pasó de largo */}
-        <div className="flex flex-col gap-6 border-b border-[#16181F] py-12 sm:flex-row sm:items-center sm:justify-between md:py-14">
-          <h2 className="text-xl text-white md:text-2xl">
-            ¿Listo para elevar tu negocio?
+        <div className="flex flex-col gap-6 border-b border-line-soft py-12 sm:flex-row sm:items-center sm:justify-between md:py-14">
+          <h2 className="text-xl text-ink md:text-2xl">
+            ¿Listo para crecer sin tantos peros?
           </h2>
           <Button href={contact.whatsapp.href} variant="ghost" className="sm:w-auto">
             Escribir por WhatsApp
@@ -30,12 +30,11 @@ export function Footer() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-2 gap-10 border-b border-[#16181F] py-12 md:py-14 lg:grid-cols-[1.6fr_1fr_1fr_1.2fr] lg:gap-15">
+        <div className="grid grid-cols-2 gap-10 border-b border-line-soft py-12 md:py-14 lg:grid-cols-[1.6fr_1fr_1fr_1.2fr] lg:gap-15">
           <div className="col-span-2 flex flex-col gap-4 lg:col-span-1">
-            <Logo size={26} />
+            <Logo size={30} />
             <p className="max-w-[280px] text-[14.5px] leading-[1.7] text-muted">
-              Soluciones digitales para negocios que quieren crecer. Diseño,
-              desarrollo y tecnología desde {site.country}.
+              {site.tagline} Desarrollo web y móvil desde {site.country}.
             </p>
           </div>
 
@@ -46,7 +45,7 @@ export function Footer() {
                 <a
                   key={link.label}
                   href={`/${link.href}`}
-                  className="text-[14.5px] text-silver transition-colors duration-150 ease-eleva hover:text-white"
+                  className="text-[14.5px] text-silver transition-colors duration-150 ease-bran hover:text-ink"
                 >
                   {link.label}
                 </a>
@@ -66,7 +65,7 @@ export function Footer() {
                   <ContactLink
                     link={link}
                     aria-label={label}
-                    className="flex size-11 items-center justify-center rounded-control border border-line-soft bg-surface-alt text-muted transition-colors duration-150 ease-eleva hover:border-line hover:text-ink"
+                    className="flex size-11 items-center justify-center rounded-control border border-line-soft bg-surface-alt text-muted transition-colors duration-150 ease-bran hover:border-line hover:text-ink"
                   >
                     <Icon name={icon} size={17} />
                   </ContactLink>
@@ -77,14 +76,14 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col gap-3 py-7 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-mono text-[11.5px] tracking-[0.08em] text-muted">
-            © {year} {site.name} · {site.tagline}
+          <p className="font-label text-[11.5px] tracking-[0.08em] text-muted">
+            © {year} {site.name} · {site.descriptor}
           </p>
           <div className="flex items-center gap-6">
-            <a href="/politica-de-privacidad" className="font-mono text-[11.5px] tracking-[0.08em] text-muted transition-colors hover:text-white">
+            <a href="/politica-de-privacidad" className="font-label text-[11.5px] tracking-[0.08em] text-muted transition-colors hover:text-ink">
               Política de privacidad
             </a>
-            <a href="/terminos" className="font-mono text-[11.5px] tracking-[0.08em] text-muted transition-colors hover:text-white">
+            <a href="/terminos" className="font-label text-[11.5px] tracking-[0.08em] text-muted transition-colors hover:text-ink">
               Términos
             </a>
           </div>

@@ -1,8 +1,8 @@
 {
-  "name": "eleva-web",
+  "name": "bran-web",
   "version": "0.1.0",
   "private": true,
-  "description": "ELEVA — Digital solutions for businesses",
+  "description": "BRAN. — Tecnología a la medida, sin peros",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

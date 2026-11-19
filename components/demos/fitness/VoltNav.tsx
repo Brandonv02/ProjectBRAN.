@@ -54,7 +54,7 @@ export function VoltNav() {
 
       <div
         className={cn(
-          "transition-[background-color,border-color,backdrop-filter] duration-300 ease-eleva",
+          "transition-[background-color,border-color,backdrop-filter] duration-300 ease-bran",
           scrolled
             ? "border-b border-white/10 bg-[#0a0a0a]/92 backdrop-blur-xl"
             : "border-b border-transparent bg-transparent",
@@ -63,7 +63,7 @@ export function VoltNav() {
         <nav
           aria-label="Navegación VOLT ATHLETICS"
           className={cn(
-            "mx-auto flex max-w-7xl items-center justify-between px-5 transition-[height] duration-300 ease-eleva sm:px-8 lg:px-12",
+            "mx-auto flex max-w-7xl items-center justify-between px-5 transition-[height] duration-300 ease-bran sm:px-8 lg:px-12",
             scrolled ? "h-[64px]" : "h-[84px] lg:h-[92px]",
           )}
         >
@@ -79,7 +79,7 @@ export function VoltNav() {
               <Link
                 key={href}
                 href={href}
-                className="text-sm font-medium uppercase tracking-[0.04em] text-[#a8aaad] transition-colors duration-200 ease-eleva hover:text-white focus-visible:outline-2 focus-visible:outline-[#c6ff1f]"
+                className="text-sm font-medium uppercase tracking-[0.04em] text-[#a8aaad] transition-colors duration-200 ease-bran hover:text-white focus-visible:outline-2 focus-visible:outline-[#c6ff1f]"
               >
                 {label}
               </Link>
@@ -88,7 +88,7 @@ export function VoltNav() {
               href={DEMO_WHATSAPP}
               target="_blank"
               rel="noreferrer"
-              className="rounded-md bg-[#c6ff1f] px-5 py-2.5 text-xs font-extrabold uppercase tracking-wide text-[#0a0a0a] transition-colors duration-200 ease-eleva hover:bg-[#dcff6b] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="rounded-md bg-[#c6ff1f] px-5 py-2.5 text-xs font-extrabold uppercase tracking-wide text-[#0a0a0a] transition-colors duration-200 ease-bran hover:bg-[#dcff6b] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Únete ahora
             </a>
@@ -109,7 +109,7 @@ export function VoltNav() {
               aria-expanded={open}
               aria-controls="menu-volt"
               aria-label={open ? "Cerrar menú" : "Abrir menú"}
-              className="flex size-10 items-center justify-center rounded-md border border-white/15 text-white transition-colors duration-200 ease-eleva hover:border-[#c6ff1f]/60 focus-visible:outline-2 focus-visible:outline-[#c6ff1f]"
+              className="flex size-10 items-center justify-center rounded-md border border-white/15 text-white transition-colors duration-200 ease-bran hover:border-[#c6ff1f]/60 focus-visible:outline-2 focus-visible:outline-[#c6ff1f]"
             >
               <Icon name={open ? "close" : "menu"} size={18} />
             </button>
@@ -123,7 +123,7 @@ export function VoltNav() {
         tabIndex={-1}
         onClick={() => setOpen(false)}
         className={cn(
-          "fixed inset-0 -z-10 bg-black/70 transition-opacity duration-300 ease-eleva lg:hidden",
+          "fixed inset-0 -z-10 bg-black/70 transition-opacity duration-300 ease-bran lg:hidden",
           open ? "opacity-100" : "pointer-events-none opacity-0",
         )}
       />
@@ -131,7 +131,7 @@ export function VoltNav() {
       <div
         id="menu-volt"
         className={cn(
-          "grid overflow-hidden border-b border-white/10 bg-[#0a0a0a] transition-[grid-template-rows] duration-300 ease-eleva lg:hidden",
+          "grid overflow-hidden border-b border-white/10 bg-[#0a0a0a] transition-[grid-template-rows] duration-300 ease-bran lg:hidden",
           open ? "grid-rows-[1fr]" : "grid-rows-[0fr] border-transparent",
         )}
       >
@@ -142,7 +142,7 @@ export function VoltNav() {
                 key={href}
                 href={href}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-3.5 text-base font-semibold uppercase tracking-wide text-white transition-colors duration-150 ease-eleva hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-[#c6ff1f]"
+                className="rounded-md px-3 py-3.5 text-base font-semibold uppercase tracking-wide text-white transition-colors duration-150 ease-bran hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-[#c6ff1f]"
               >
                 {label}
               </Link>

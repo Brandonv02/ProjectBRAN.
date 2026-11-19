@@ -9,7 +9,7 @@ import { DEMO_WHATSAPP, navItems } from "./data";
 /**
  * Cabecera fija de la demo: franja de aviso + navegación.
  * La navegación se contrae y gana fondo al hacer scroll, igual que el
- * patrón ya usado en components/layout/Navbar.tsx para la home de ELEVA.
+ * patrón ya usado en components/layout/Navbar.tsx para la home de BRAN..
  */
 export function BarberNav() {
   const [scrolled, setScrolled] = useState(false);
@@ -54,7 +54,7 @@ export function BarberNav() {
 
       <div
         className={cn(
-          "transition-[background-color,border-color,backdrop-filter] duration-300 ease-eleva",
+          "transition-[background-color,border-color,backdrop-filter] duration-300 ease-bran",
           scrolled
             ? "border-b border-white/10 bg-[#11100f]/90 backdrop-blur-xl"
             : "border-b border-transparent bg-transparent",
@@ -63,7 +63,7 @@ export function BarberNav() {
         <nav
           aria-label="Navegación NERO BARBER"
           className={cn(
-            "mx-auto flex max-w-7xl items-center justify-between px-5 transition-[height] duration-300 ease-eleva sm:px-8 lg:px-12",
+            "mx-auto flex max-w-7xl items-center justify-between px-5 transition-[height] duration-300 ease-bran sm:px-8 lg:px-12",
             scrolled ? "h-[64px]" : "h-[84px] lg:h-[92px]",
           )}
         >
@@ -79,7 +79,7 @@ export function BarberNav() {
               <Link
                 key={href}
                 href={href}
-                className="text-sm text-[#b5afa5] transition-colors duration-200 ease-eleva hover:text-white focus-visible:outline-2 focus-visible:outline-[#c5a477]"
+                className="text-sm text-[#b5afa5] transition-colors duration-200 ease-bran hover:text-white focus-visible:outline-2 focus-visible:outline-[#c5a477]"
               >
                 {label}
               </Link>
@@ -88,7 +88,7 @@ export function BarberNav() {
               href={DEMO_WHATSAPP}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full bg-[#c5a477] px-5 py-2.5 text-xs font-semibold tracking-wide text-[#171411] transition-colors duration-200 ease-eleva hover:bg-[#dfc29a] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="rounded-full bg-[#c5a477] px-5 py-2.5 text-xs font-semibold tracking-wide text-[#171411] transition-colors duration-200 ease-bran hover:bg-[#dfc29a] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Reservar cita
             </a>
@@ -109,7 +109,7 @@ export function BarberNav() {
               aria-expanded={open}
               aria-controls="menu-nero"
               aria-label={open ? "Cerrar menú" : "Abrir menú"}
-              className="flex size-10 items-center justify-center rounded-full border border-white/20 text-white transition-colors duration-200 ease-eleva hover:border-[#c5a477]/60 focus-visible:outline-2 focus-visible:outline-[#c5a477]"
+              className="flex size-10 items-center justify-center rounded-full border border-white/20 text-white transition-colors duration-200 ease-bran hover:border-[#c5a477]/60 focus-visible:outline-2 focus-visible:outline-[#c5a477]"
             >
               <Icon name={open ? "close" : "menu"} size={18} />
             </button>
@@ -123,7 +123,7 @@ export function BarberNav() {
         tabIndex={-1}
         onClick={() => setOpen(false)}
         className={cn(
-          "fixed inset-0 -z-10 bg-black/70 transition-opacity duration-300 ease-eleva lg:hidden",
+          "fixed inset-0 -z-10 bg-black/70 transition-opacity duration-300 ease-bran lg:hidden",
           open ? "opacity-100" : "pointer-events-none opacity-0",
         )}
       />
@@ -131,7 +131,7 @@ export function BarberNav() {
       <div
         id="menu-nero"
         className={cn(
-          "grid overflow-hidden border-b border-white/10 bg-[#141210] transition-[grid-template-rows] duration-300 ease-eleva lg:hidden",
+          "grid overflow-hidden border-b border-white/10 bg-[#141210] transition-[grid-template-rows] duration-300 ease-bran lg:hidden",
           open ? "grid-rows-[1fr]" : "grid-rows-[0fr] border-transparent",
         )}
       >
@@ -142,7 +142,7 @@ export function BarberNav() {
                 key={href}
                 href={href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-3.5 text-base font-medium text-[#ddd6ca] transition-colors duration-150 ease-eleva hover:bg-white/5 hover:text-white focus-visible:outline-2 focus-visible:outline-[#c5a477]"
+                className="rounded-lg px-3 py-3.5 text-base font-medium text-[#ddd6ca] transition-colors duration-150 ease-bran hover:bg-white/5 hover:text-white focus-visible:outline-2 focus-visible:outline-[#c5a477]"
               >
                 {label}
               </Link>

@@ -1,4 +1,4 @@
-/** Información jurídica que ELEVA debe confirmar antes de publicar. */
+/** Información jurídica que BRAN. debe confirmar antes de publicar. */
 export const legalPlaceholders = {
   controller: "[RAZÓN SOCIAL O NOMBRE DEL RESPONSABLE POR CONFIRMAR]",
   contactEmail: "[CORREO DE CONTACTO POR CONFIRMAR]",

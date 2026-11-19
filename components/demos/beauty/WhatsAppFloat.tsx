@@ -59,7 +59,7 @@ export function WhatsAppFloat() {
       aria-label="Reservar por WhatsApp — número de demostración"
       className={cn(
         "fixed bottom-5 right-5 z-40 flex size-14 items-center justify-center rounded-full bg-[#a9824f] text-[#fbf7ef]",
-        "shadow-[0_18px_40px_-16px_rgba(35,31,27,0.55)] transition-[opacity,transform] duration-300 ease-eleva",
+        "shadow-[0_18px_40px_-16px_rgba(35,31,27,0.55)] transition-[opacity,transform] duration-300 ease-bran",
         "hover:-translate-y-0.5 hover:bg-[#8c6a3c] motion-reduce:transition-none motion-reduce:hover:translate-y-0",
         "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#231f1b]",
         visible ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none translate-y-3 opacity-0",

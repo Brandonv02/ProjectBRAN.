@@ -59,7 +59,7 @@ export function WhatsAppFloat() {
       aria-label="Hablar por WhatsApp — número de demostración"
       className={cn(
         "fixed bottom-5 right-5 z-40 flex size-14 items-center justify-center rounded-full bg-[#c6ff1f] text-[#0a0a0a]",
-        "shadow-[0_18px_40px_-16px_rgba(198,255,31,0.45)] transition-[opacity,transform] duration-300 ease-eleva",
+        "shadow-[0_18px_40px_-16px_rgba(198,255,31,0.45)] transition-[opacity,transform] duration-300 ease-bran",
         "hover:-translate-y-0.5 hover:bg-[#dcff6b] motion-reduce:transition-none motion-reduce:hover:translate-y-0",
         "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white",
         visible ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none translate-y-3 opacity-0",

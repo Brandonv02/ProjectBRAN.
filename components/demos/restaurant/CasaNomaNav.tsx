@@ -54,7 +54,7 @@ export function CasaNomaNav() {
 
       <div
         className={cn(
-          "transition-[background-color,border-color,backdrop-filter] duration-300 ease-eleva",
+          "transition-[background-color,border-color,backdrop-filter] duration-300 ease-bran",
           scrolled
             ? "border-b border-[#241c15]/10 bg-[#f3ead9]/92 backdrop-blur-xl"
             : "border-b border-transparent bg-transparent",
@@ -63,14 +63,14 @@ export function CasaNomaNav() {
         <nav
           aria-label="Navegación CASA NOMA"
           className={cn(
-            "mx-auto flex max-w-7xl items-center justify-between px-5 transition-[height] duration-300 ease-eleva sm:px-8 lg:px-12",
+            "mx-auto flex max-w-7xl items-center justify-between px-5 transition-[height] duration-300 ease-bran sm:px-8 lg:px-12",
             scrolled ? "h-[64px]" : "h-[84px] lg:h-[92px]",
           )}
         >
           <Link
             href="#inicio"
             className={cn(
-              "shrink-0 text-base font-semibold tracking-[0.18em] transition-colors duration-300 ease-eleva focus-visible:outline-2 focus-visible:outline-[#c1603c] sm:text-lg",
+              "shrink-0 text-base font-semibold tracking-[0.18em] transition-colors duration-300 ease-bran focus-visible:outline-2 focus-visible:outline-[#c1603c] sm:text-lg",
               scrolled ? "text-[#241c15]" : "text-[#f6efe4]",
             )}
           >
@@ -83,7 +83,7 @@ export function CasaNomaNav() {
                 key={href}
                 href={href}
                 className={cn(
-                  "text-sm transition-colors duration-300 ease-eleva focus-visible:outline-2 focus-visible:outline-[#c1603c]",
+                  "text-sm transition-colors duration-300 ease-bran focus-visible:outline-2 focus-visible:outline-[#c1603c]",
                   scrolled ? "text-[#5c4b3a] hover:text-[#241c15]" : "text-[#f6efe4]/85 hover:text-[#f6efe4]",
                 )}
               >
@@ -94,7 +94,7 @@ export function CasaNomaNav() {
               href={DEMO_WHATSAPP}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full bg-[#c1603c] px-5 py-2.5 text-xs font-semibold tracking-wide text-[#f6efe4] transition-colors duration-200 ease-eleva hover:bg-[#9c4a2e] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#241c15]"
+              className="rounded-full bg-[#c1603c] px-5 py-2.5 text-xs font-semibold tracking-wide text-[#f6efe4] transition-colors duration-200 ease-bran hover:bg-[#9c4a2e] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#241c15]"
             >
               Reservar mesa
             </a>
@@ -116,7 +116,7 @@ export function CasaNomaNav() {
               aria-controls="menu-noma"
               aria-label={open ? "Cerrar menú" : "Abrir menú"}
               className={cn(
-                "flex size-10 items-center justify-center rounded-full border transition-colors duration-300 ease-eleva hover:border-[#c1603c]/60 focus-visible:outline-2 focus-visible:outline-[#c1603c]",
+                "flex size-10 items-center justify-center rounded-full border transition-colors duration-300 ease-bran hover:border-[#c1603c]/60 focus-visible:outline-2 focus-visible:outline-[#c1603c]",
                 scrolled ? "border-[#241c15]/15 text-[#241c15]" : "border-[#f6efe4]/40 text-[#f6efe4]",
               )}
             >
@@ -132,7 +132,7 @@ export function CasaNomaNav() {
         tabIndex={-1}
         onClick={() => setOpen(false)}
         className={cn(
-          "fixed inset-0 -z-10 bg-[#241c15]/50 transition-opacity duration-300 ease-eleva lg:hidden",
+          "fixed inset-0 -z-10 bg-[#241c15]/50 transition-opacity duration-300 ease-bran lg:hidden",
           open ? "opacity-100" : "pointer-events-none opacity-0",
         )}
       />
@@ -140,7 +140,7 @@ export function CasaNomaNav() {
       <div
         id="menu-noma"
         className={cn(
-          "grid overflow-hidden border-b border-[#241c15]/10 bg-[#f3ead9] transition-[grid-template-rows] duration-300 ease-eleva lg:hidden",
+          "grid overflow-hidden border-b border-[#241c15]/10 bg-[#f3ead9] transition-[grid-template-rows] duration-300 ease-bran lg:hidden",
           open ? "grid-rows-[1fr]" : "grid-rows-[0fr] border-transparent",
         )}
       >
@@ -151,7 +151,7 @@ export function CasaNomaNav() {
                 key={href}
                 href={href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-3.5 text-base font-medium text-[#241c15] transition-colors duration-150 ease-eleva hover:bg-[#241c15]/5 focus-visible:outline-2 focus-visible:outline-[#c1603c]"
+                className="rounded-lg px-3 py-3.5 text-base font-medium text-[#241c15] transition-colors duration-150 ease-bran hover:bg-[#241c15]/5 focus-visible:outline-2 focus-visible:outline-[#c1603c]"
               >
                 {label}
               </Link>

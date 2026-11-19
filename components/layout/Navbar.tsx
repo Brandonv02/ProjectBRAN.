@@ -57,7 +57,7 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-[background-color,border-color,backdrop-filter] duration-[250ms] ease-eleva",
+        "fixed inset-x-0 top-0 z-50 transition-[background-color,border-color,backdrop-filter] duration-[250ms] ease-bran",
         scrolled
           ? "border-b border-line-soft bg-carbon/82 backdrop-blur-xl"
           : "border-b border-transparent bg-transparent",
@@ -67,16 +67,16 @@ export function Navbar() {
         <nav
           aria-label="Principal"
           className={cn(
-            "flex items-center justify-between transition-[height] duration-[250ms] ease-eleva",
+            "flex items-center justify-between transition-[height] duration-[250ms] ease-bran",
             scrolled ? "h-[68px]" : "h-[72px] lg:h-22",
           )}
         >
           <a
             href="/#inicio"
             className="rounded-chip"
-            aria-label="ELEVA — inicio"
+            aria-label="BRAN. — inicio"
           >
-            <Logo size={scrolled ? 24 : 26} />
+            <Logo size={scrolled ? 26 : 30} />
           </a>
 
           <div className="hidden items-center gap-9 lg:flex">
@@ -84,7 +84,7 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={`/${link.href}`}
-                className="text-[14.5px] font-medium text-silver transition-colors duration-150 ease-eleva hover:text-white"
+                className="text-[14.5px] font-medium text-silver transition-colors duration-150 ease-bran hover:text-ink"
               >
                 {link.label}
               </a>
@@ -106,7 +106,7 @@ export function Navbar() {
               aria-expanded={menuOpen}
               aria-controls="menu-movil"
               aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
-              className="flex size-12 items-center justify-center rounded-control border border-line text-ink transition-colors duration-150 ease-eleva hover:border-line-strong hover:text-white lg:hidden"
+              className="flex size-12 items-center justify-center rounded-control border border-line text-ink transition-colors duration-150 ease-bran hover:border-line-strong hover:text-ink lg:hidden"
             >
               <Icon name={menuOpen ? "close" : "menu"} />
             </button>
@@ -126,7 +126,7 @@ export function Navbar() {
               key={link.href}
               href={`/${link.href}`}
               onClick={() => setMenuOpen(false)}
-              className="flex min-h-12 items-center rounded-control px-2 font-display text-xl font-semibold text-ink transition-colors duration-150 ease-eleva hover:bg-surface hover:text-white"
+              className="flex min-h-12 items-center rounded-control px-2 font-display text-xl font-bold text-ink transition-colors duration-150 ease-bran hover:bg-surface hover:text-ink"
             >
               {link.label}
             </a>
@@ -137,7 +137,7 @@ export function Navbar() {
             className="mt-4"
             onClick={() => setMenuOpen(false)}
           >
-            Hablemos de tu proyecto
+            Hablemos de tu negocio
             <Icon name="arrowRight" size={17} />
           </Button>
         </Container>

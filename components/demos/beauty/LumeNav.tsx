@@ -54,7 +54,7 @@ export function LumeNav() {
 
       <div
         className={cn(
-          "transition-[background-color,border-color,backdrop-filter] duration-300 ease-eleva",
+          "transition-[background-color,border-color,backdrop-filter] duration-300 ease-bran",
           scrolled
             ? "border-b border-[#231f1b]/10 bg-[#f6f1e9]/90 backdrop-blur-xl"
             : "border-b border-transparent bg-transparent",
@@ -63,7 +63,7 @@ export function LumeNav() {
         <nav
           aria-label="Navegación LUMÉ BEAUTY STUDIO"
           className={cn(
-            "mx-auto flex max-w-7xl items-center justify-between px-5 transition-[height] duration-300 ease-eleva sm:px-8 lg:px-12",
+            "mx-auto flex max-w-7xl items-center justify-between px-5 transition-[height] duration-300 ease-bran sm:px-8 lg:px-12",
             scrolled ? "h-[64px]" : "h-[84px] lg:h-[92px]",
           )}
         >
@@ -79,7 +79,7 @@ export function LumeNav() {
               <Link
                 key={href}
                 href={href}
-                className="text-sm text-[#5b5146] transition-colors duration-200 ease-eleva hover:text-[#231f1b] focus-visible:outline-2 focus-visible:outline-[#a9824f]"
+                className="text-sm text-[#5b5146] transition-colors duration-200 ease-bran hover:text-[#231f1b] focus-visible:outline-2 focus-visible:outline-[#a9824f]"
               >
                 {label}
               </Link>
@@ -88,7 +88,7 @@ export function LumeNav() {
               href={DEMO_WHATSAPP}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full bg-[#a9824f] px-5 py-2.5 text-xs font-semibold tracking-wide text-[#fbf7ef] transition-colors duration-200 ease-eleva hover:bg-[#8c6a3c] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#231f1b]"
+              className="rounded-full bg-[#a9824f] px-5 py-2.5 text-xs font-semibold tracking-wide text-[#fbf7ef] transition-colors duration-200 ease-bran hover:bg-[#8c6a3c] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#231f1b]"
             >
               Reservar cita
             </a>
@@ -109,7 +109,7 @@ export function LumeNav() {
               aria-expanded={open}
               aria-controls="menu-lume"
               aria-label={open ? "Cerrar menú" : "Abrir menú"}
-              className="flex size-10 items-center justify-center rounded-full border border-[#231f1b]/15 text-[#231f1b] transition-colors duration-200 ease-eleva hover:border-[#a9824f]/60 focus-visible:outline-2 focus-visible:outline-[#a9824f]"
+              className="flex size-10 items-center justify-center rounded-full border border-[#231f1b]/15 text-[#231f1b] transition-colors duration-200 ease-bran hover:border-[#a9824f]/60 focus-visible:outline-2 focus-visible:outline-[#a9824f]"
             >
               <Icon name={open ? "close" : "menu"} size={18} />
             </button>
@@ -123,7 +123,7 @@ export function LumeNav() {
         tabIndex={-1}
         onClick={() => setOpen(false)}
         className={cn(
-          "fixed inset-0 -z-10 bg-[#231f1b]/50 transition-opacity duration-300 ease-eleva lg:hidden",
+          "fixed inset-0 -z-10 bg-[#231f1b]/50 transition-opacity duration-300 ease-bran lg:hidden",
           open ? "opacity-100" : "pointer-events-none opacity-0",
         )}
       />
@@ -131,7 +131,7 @@ export function LumeNav() {
       <div
         id="menu-lume"
         className={cn(
-          "grid overflow-hidden border-b border-[#231f1b]/10 bg-[#f6f1e9] transition-[grid-template-rows] duration-300 ease-eleva lg:hidden",
+          "grid overflow-hidden border-b border-[#231f1b]/10 bg-[#f6f1e9] transition-[grid-template-rows] duration-300 ease-bran lg:hidden",
           open ? "grid-rows-[1fr]" : "grid-rows-[0fr] border-transparent",
         )}
       >
@@ -142,7 +142,7 @@ export function LumeNav() {
                 key={href}
                 href={href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-3.5 text-base font-medium text-[#231f1b] transition-colors duration-150 ease-eleva hover:bg-[#231f1b]/5 focus-visible:outline-2 focus-visible:outline-[#a9824f]"
+                className="rounded-lg px-3 py-3.5 text-base font-medium text-[#231f1b] transition-colors duration-150 ease-bran hover:bg-[#231f1b]/5 focus-visible:outline-2 focus-visible:outline-[#a9824f]"
               >
                 {label}
               </Link>

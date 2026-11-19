@@ -52,7 +52,7 @@ function VoltFooter() {
       <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-1 border-t border-white/10 pt-6 text-xs text-[#6b6e72] sm:flex-row sm:items-center sm:justify-between">
         <p>Todos los datos de esta demo son ficticios.</p>
         <Link href="/" className="text-[#aeb0b3] underline-offset-4 transition-colors hover:text-[#c6ff1f] hover:underline focus-visible:outline-2 focus-visible:outline-[#c6ff1f]">
-          Digital experience by ELEVA ↗
+          Digital experience by BRAN. ↗
         </Link>
       </div>
     </footer>
@@ -251,7 +251,7 @@ export function VoltAthletics() {
               {facilityItems.map((item, index) => (
                 <Reveal key={item.label} delay={index * 60} className="mb-4 block break-inside-avoid">
                   <div className={`${item.aspect} group relative overflow-hidden rounded-lg`}>
-                    <Image src={item.image} alt={item.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-700 ease-eleva group-hover:scale-[1.03]" />
+                    <Image src={item.image} alt={item.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-700 ease-bran group-hover:scale-[1.03]" />
                     <span className="absolute bottom-3 left-4 text-[10px] font-bold uppercase tracking-[0.18em] text-white drop-shadow">{item.label}</span>
                   </div>
                 </Reveal>
@@ -277,7 +277,7 @@ export function VoltAthletics() {
                   <p className="mt-1 text-sm uppercase tracking-wide text-[#c6ff1f]">{coach.role}</p>
                   <span
                     aria-hidden="true"
-                    className="mt-3 block h-px w-8 bg-[#c6ff1f]/60 transition-[width] duration-500 ease-eleva group-hover:w-16"
+                    className="mt-3 block h-px w-8 bg-[#c6ff1f]/60 transition-[width] duration-500 ease-bran group-hover:w-16"
                   />
                   <p className="mt-3 text-[10px] uppercase tracking-wider text-[#6b6e72]">Perfil ficticio de demostración</p>
                 </Reveal>

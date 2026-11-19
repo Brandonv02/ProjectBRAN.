@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 
 /**
- * Set de iconos de ELEVA.
+ * Set de iconos de BRAN.
  * Un solo estilo: trazo 1.8, grid 24, extremos redondeados, sin relleno.
  * Nunca emoji, nunca iconos de otra familia.
  */

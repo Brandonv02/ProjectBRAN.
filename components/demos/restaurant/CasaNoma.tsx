@@ -49,7 +49,7 @@ function CasaNomaFooter() {
       <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-1 border-t border-[#f6efe4]/10 pt-6 text-xs text-[#8a7461] sm:flex-row sm:items-center sm:justify-between">
         <p>Todos los datos de esta demo son ficticios.</p>
         <Link href="/" className="text-[#a79279] underline-offset-4 transition-colors hover:text-[#d9895f] hover:underline focus-visible:outline-2 focus-visible:outline-[#d9895f]">
-          Digital experience by ELEVA ↗
+          Digital experience by BRAN. ↗
         </Link>
       </div>
     </footer>
@@ -256,7 +256,7 @@ export function CasaNoma() {
               {galleryItems.map((item, index) => (
                 <Reveal key={item.label} delay={index * 60} className="mb-4 block break-inside-avoid">
                   <div className={`${item.aspect} group relative overflow-hidden rounded-xl`}>
-                    <Image src={item.image} alt={item.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-700 ease-eleva group-hover:scale-[1.03]" />
+                    <Image src={item.image} alt={item.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-700 ease-bran group-hover:scale-[1.03]" />
                     <span className="absolute bottom-3 left-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-white drop-shadow">{item.label}</span>
                   </div>
                 </Reveal>

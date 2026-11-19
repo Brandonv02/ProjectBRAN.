@@ -6,8 +6,8 @@ export const runtime = "edge";
 /**
  * Imagen de Open Graph.
  * Se dibuja con formas y peso tipográfico en vez de con la tipografía de
- * marca: incrustar Poppins aquí obligaría a una descarga externa en cada
- * render. La marca se sostiene con el símbolo, la retícula y el azul.
+ * marca: incrustar Sora/Anta aquí obligaría a una descarga externa en cada
+ * render. La marca se sostiene con la firma BRAN., el aro y el naranja.
  */
 export async function GET() {
   return new ImageResponse(
@@ -20,71 +20,75 @@ export async function GET() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "72px 80px",
-          background: "#0D0F14",
-          backgroundImage:
-            "linear-gradient(to right, #171A20 1px, transparent 1px), linear-gradient(to bottom, #171A20 1px, transparent 1px)",
-          backgroundSize: "64px 64px",
+          background: "#0A0A0A",
           position: "relative",
+          overflow: "hidden",
         }}
       >
-        {/* Halo azul */}
+        {/* El aro: el punto de BRAN. crecido, saliendo del borde */}
         <div
           style={{
             position: "absolute",
-            top: -260,
-            right: -180,
-            width: 900,
-            height: 760,
-            background:
-              "radial-gradient(circle at 50% 50%, rgba(91,107,255,0.30) 0%, rgba(91,107,255,0.07) 42%, rgba(13,15,20,0) 68%)",
+            top: -190,
+            right: -190,
+            width: 560,
+            height: 560,
+            borderRadius: 999,
+            border: "70px solid #FF5F1A",
             display: "flex",
           }}
         />
 
-        <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-          <svg width="52" height="52" viewBox="0 0 32 32" fill="none">
-            <path d="M8 6h15l-3 5H8Z" fill="#5B6BFF" />
-            <path d="M8 13.5h13l-3 5H8Z" fill="#FFFFFF" />
-            <path d="M8 21h11l-3 5H8Z" fill="#FFFFFF" />
-          </svg>
+        <div style={{ display: "flex", alignItems: "flex-end", gap: 8 }}>
           <div
             style={{
-              fontSize: 34,
+              fontSize: 58,
               fontWeight: 700,
-              letterSpacing: 6,
-              color: "#FFFFFF",
+              letterSpacing: 4,
+              color: "#F4F5F5",
+              lineHeight: 1,
               display: "flex",
             }}
           >
-            ELEVA
+            BRAN
           </div>
+          <div
+            style={{
+              width: 14,
+              height: 14,
+              borderRadius: 999,
+              background: "#FF5F1A",
+              marginBottom: 4,
+              display: "flex",
+            }}
+          />
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 26 }}>
           <div
             style={{
-              fontSize: 82,
-              fontWeight: 700,
+              fontSize: 84,
+              fontWeight: 800,
               lineHeight: 1.04,
               letterSpacing: -3,
-              color: "#FFFFFF",
-              maxWidth: 900,
+              color: "#F4F5F5",
+              maxWidth: 940,
               display: "flex",
             }}
           >
-            Elevamos negocios con tecnología.
+            Tecnología a la medida, sin peros.
           </div>
           <div
             style={{
               fontSize: 30,
               lineHeight: 1.45,
-              color: "#A6AAB5",
+              color: "#B9BBBF",
               maxWidth: 820,
               display: "flex",
             }}
           >
-            Diseño y desarrollo de soluciones digitales para negocios que quieren
-            crecer.
+            Convierto los procesos manuales de tu negocio en una herramienta
+            digital clara, segura y fácil de usar.
           </div>
         </div>
 
@@ -94,7 +98,7 @@ export async function GET() {
             alignItems: "center",
             gap: 18,
             paddingTop: 28,
-            borderTop: "1px solid #262A33",
+            borderTop: "1px solid #2A2D31",
           }}
         >
           <div
@@ -102,7 +106,7 @@ export async function GET() {
               width: 10,
               height: 10,
               borderRadius: 999,
-              background: "#5B6BFF",
+              background: "#FF5F1A",
               display: "flex",
             }}
           />
@@ -111,11 +115,11 @@ export async function GET() {
               fontSize: 24,
               letterSpacing: 3,
               textTransform: "uppercase",
-              color: "#7A7F8C",
+              color: "#8C9096",
               display: "flex",
             }}
           >
-            {site.tagline}
+            {site.descriptor}
           </div>
         </div>
       </div>

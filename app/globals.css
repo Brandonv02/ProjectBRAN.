@@ -1,71 +1,76 @@
 @import "tailwindcss";
 
 /* ───────────────────────────────────────────────────────────────
-   ELEVA — Design tokens
-   Fuente de verdad: guía de marca oficial (brand alignment).
-   Paleta: Primary Blue #5B6BFF · Background #0D0F14 · Surface #1A1D24 ·
-   Muted Gray #7A7F8C · White #FFFFFF. Tonos intermedios derivados de
-   estos cinco valores para mantener jerarquía tipográfica y de estado.
+   BRAN. — Design tokens
+   Fuente de verdad: Manual de marca BRAN. 2026 (V.01), pág. 09–11.
+   Paleta oficial: Negro profundo #0A0A0A · Gris carbón #1C1E21 ·
+   Naranja ON #FF5F1A · Naranja claro #FF8431 · Gris niebla #CDCDCD ·
+   Blanco frío #F4F5F5. Los tonos intermedios se derivan de estos seis
+   para mantener jerarquía de superficies y de estado.
+   Regla de contraste del manual: texto SIEMPRE negro sobre naranja;
+   nunca texto blanco pequeño sobre naranja ni texto naranja sobre gris.
    ─────────────────────────────────────────────────────────────── */
 @theme {
   /* Superficies */
-  --color-void: #08090c;
-  --color-carbon: #0d0f14; /* Background oficial */
-  --color-surface: #1a1d24; /* Surface oficial */
-  --color-surface-alt: #14161c;
-  --color-surface-deep: #101319;
-  --color-elevated: #21242d;
-  --color-elevated-hover: #262a34;
-  --color-line: #262a33;
-  --color-line-soft: #1b1e25;
-  --color-line-strong: #343945;
-  --color-line-hover: #454b59;
+  --color-void: #050505;
+  --color-carbon: #0a0a0a; /* Negro profundo — fondo principal */
+  --color-surface: #1c1e21; /* Gris carbón — tarjetas y superficies */
+  --color-surface-alt: #131416;
+  --color-surface-deep: #0f1011;
+  --color-elevated: #25282c;
+  --color-elevated-hover: #2b2e33;
+  --color-line: #2a2d31;
+  --color-line-soft: #1e2023;
+  --color-line-strong: #3a3e44;
+  --color-line-hover: #4c5158;
 
   /* Texto sobre oscuro */
-  --color-ink: #ffffff; /* White oficial */
-  --color-silver: #a6aab5; /* cuerpo secundario, derivado de Muted Gray */
-  --color-muted: #7a7f8c; /* Muted Gray oficial — 4.8:1 sobre Background */
-  --color-disabled: #52565f; /* SOLO estados deshabilitados */
+  --color-ink: #f4f5f5; /* Blanco frío */
+  --color-silver: #b9bbbf; /* cuerpo secundario */
+  --color-muted: #8c9096; /* 5.9:1 sobre Negro profundo */
+  --color-disabled: #565a60; /* SOLO estados deshabilitados */
 
-  /* Banda clara */
-  --color-paper: #f7f8fa;
-  --color-paper-ink: #0d0f14;
-  --color-paper-muted: #5c616b;
-  --color-paper-line: #dde1e6;
-  --color-paper-grid: #e6e8ec;
+  /* Banda clara — Gris niebla (fondo editorial claro) */
+  --color-paper: #cdcdcd;
+  --color-paper-ink: #0a0a0a;
+  --color-paper-muted: #3b3e42; /* 7.3:1 sobre Gris niebla */
+  --color-paper-line: #aeaeae;
 
-  /* Acento — Primary Blue oficial */
-  --color-accent: #5b6bff;
-  --color-accent-solid: #5b6bff;
-  --color-accent-bright: #7c87ff;
-  --color-accent-deep: #4450d9;
-  --color-accent-ice: #aeb6ff;
+  /* Acento — Naranja ON */
+  --color-accent: #ff5f1a; /* Naranja ON: color de carácter */
+  --color-accent-solid: #ff5f1a;
+  --color-accent-bright: #ff8431; /* Naranja claro: etiquetas sobre negro */
+  --color-accent-deep: #e04a08; /* estado pressed */
+  --color-accent-ice: #ffa468; /* hover de texto naranja sobre negro */
 
   /* Semánticos */
   --color-success: #24c08a;
   --color-warning: #e8a33d;
   --color-danger: #e5484d;
 
-  /* Tipografía — Poppins, familia única de marca */
-  --font-display: var(--font-poppins), "Segoe UI", system-ui, -apple-system, sans-serif;
-  --font-sans: var(--font-poppins), "Segoe UI", system-ui, -apple-system, sans-serif;
-  --font-mono: var(--font-poppins), "Segoe UI", system-ui, -apple-system, sans-serif;
+  /* Tipografía — Manual pág. 10
+     Sora: titulares · Manrope: textos · Anta: firma y etiquetas cortas */
+  --font-display: var(--font-sora), "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-sans: var(--font-manrope), "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-label: var(--font-anta), "Segoe UI", system-ui, -apple-system, sans-serif;
+  /* Las demos de clientes usan font-mono como texto auxiliar: se mantiene sans, como antes. */
+  --font-mono: var(--font-manrope), "Segoe UI", system-ui, sans-serif;
 
-  /* Radios */
-  --radius-chip: 6px;
-  --radius-control: 10px;
-  --radius-card: 16px;
-  --radius-block: 24px;
+  /* Radios — "esquinas redondeadas de 20 a 28 px", nada plano ni cuadriculado */
+  --radius-chip: 8px;
+  --radius-control: 16px;
+  --radius-card: 24px;
+  --radius-block: 28px;
 
   /* Movimiento */
-  --ease-eleva: cubic-bezier(0.16, 1, 0.3, 1);
-  --animate-glow: elevaGlow 4s ease-in-out infinite;
+  --ease-bran: cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-glow: branGlow 4s ease-in-out infinite;
 }
 
-@keyframes elevaGlow {
+@keyframes branGlow {
   0%,
   100% {
-    opacity: 0.82;
+    opacity: 0.8;
   }
   50% {
     opacity: 1;
@@ -90,14 +95,19 @@
     text-rendering: optimizeLegibility;
   }
 
+  /* Titulares: Sora Bold/ExtraBold (manual pág. 10) */
   h1,
   h2,
   h3,
   h4 {
     font-family: var(--font-display);
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: -0.03em;
     text-wrap: balance;
+  }
+
+  h1 {
+    font-weight: 800;
   }
 
   p {
@@ -105,14 +115,14 @@
   }
 
   ::selection {
-    background-color: color-mix(in srgb, var(--color-accent) 32%, transparent);
-    color: #ffffff;
+    background-color: var(--color-accent);
+    color: #0a0a0a;
   }
 
-  /* Foco visible del sistema: anillo azul de 3px. Nunca se elimina. */
+  /* Foco visible del sistema: anillo naranja de 3px. Nunca se elimina. */
   :focus-visible {
     outline: none;
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 38%, transparent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 55%, transparent);
     border-radius: var(--radius-chip);
   }
 
@@ -123,23 +133,12 @@
 }
 
 /* ───────────────────────────────────────────────────────────────
-   Utilidades del sistema
+   Recursos gráficos (manual pág. 11) — máximo dos por pieza.
+   El aro, las marcas de pausa y la línea de luz se dibujan con
+   componentes; aquí solo vive el halo de la línea de luz.
    ─────────────────────────────────────────────────────────────── */
-@utility grid-bg {
-  background-image: linear-gradient(to right, #171a20 1px, transparent 1px),
-    linear-gradient(to bottom, #171a20 1px, transparent 1px);
-  background-size: 48px 48px;
-}
-
-@utility paper-grid-bg {
-  background-image: linear-gradient(to right, #e6e8ec 1px, transparent 1px),
-    linear-gradient(to bottom, #e6e8ec 1px, transparent 1px);
-  background-size: 48px 48px;
-}
-
-/* Barra del logo: corte diagonal en el extremo derecho */
-@utility eleva-bar {
-  clip-path: polygon(0 0, 100% 0, calc(100% - 34px) 100%, 0 100%);
+@utility light-line-glow {
+  filter: drop-shadow(0 0 14px rgba(255, 95, 26, 0.55));
 }
 
 /* Entrada al hacer scroll — una sola vez, un solo gesto.
@@ -148,8 +147,8 @@
    nunca se esconde texto detrás de una animación. */
 .reveal {
   transition:
-    opacity 700ms var(--ease-eleva),
-    transform 700ms var(--ease-eleva);
+    opacity 700ms var(--ease-bran),
+    transform 700ms var(--ease-bran);
   transition-delay: var(--reveal-delay, 0ms);
 }
 
@@ -160,8 +159,8 @@
 }
 
 /* Demos con marca propia (p. ej. /demos/barber): el foco visible usa el
-   acento de esa marca vía `outline`, así que se anula el anillo azul de
-   ELEVA de `:focus-visible` sin tocar el resto del sitio. Fuera de
+   acento de esa marca vía `outline`, así que se anula el anillo naranja de
+   BRAN. de `:focus-visible` sin tocar el resto del sitio. Fuera de
    @layer para que gane siempre sobre la regla de base. */
 .demo-scope :focus-visible {
   box-shadow: none;

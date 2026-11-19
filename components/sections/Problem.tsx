@@ -14,17 +14,17 @@ export function Problem() {
             <Eyebrow>El problema</Eyebrow>
             <h2
               id="problema-titulo"
-              className="text-[30px] leading-[1.12] text-white sm:text-4xl xl:text-[40px] xl:leading-[1.1]"
+              className="text-[30px] leading-[1.12] text-ink sm:text-4xl xl:text-[40px] xl:leading-[1.1]"
             >
-              Tu negocio existe. En internet, casi no.
+              Tu negocio crece. Tus procesos siguen a mano.
             </h2>
             <p className="text-base leading-[1.75] text-silver lg:text-[17px]">
-              Tus clientes te buscan en Google, te encuentran en Instagram y
-              terminan preguntando el precio por WhatsApp. Si no hay nada sólido
-              detrás, la venta se enfría.
+              Si todavía llevas ventas, stock y clientes en un cuaderno o en mil
+              chats, no es falta de ganas: te falta una herramienta hecha a tu
+              medida.
             </p>
-            <p className="mt-3 border-l-2 border-accent bg-[linear-gradient(90deg,rgba(91,107,255,0.08)_0%,rgba(91,107,255,0)_100%)] px-5 py-5 text-[15.5px] leading-[1.6] text-ink xl:text-base">
-              ELEVA construye la base digital que tu negocio ya debería tener.
+            <p className="mt-3 border-l-2 border-accent bg-surface px-5 py-5 text-[15.5px] leading-[1.6] text-ink xl:text-base">
+              BRAN. convierte lo manual en algo claro, seguro y fácil de usar.
             </p>
           </Reveal>
 
@@ -38,12 +38,12 @@ export function Problem() {
               >
                 <span
                   aria-hidden="true"
-                  className="flex size-11 shrink-0 items-center justify-center rounded-[12px] border border-line bg-surface text-accent-bright"
+                  className="flex size-11 shrink-0 items-center justify-center rounded-[16px] border border-line bg-surface text-accent-bright"
                 >
                   <Icon name={problem.icon} size={20} />
                 </span>
                 <div className="flex flex-col gap-1.5">
-                  <h3 className="text-[17.5px] text-white lg:text-xl">
+                  <h3 className="text-[17.5px] text-ink lg:text-xl">
                     {problem.title}
                   </h3>
                   <p className="text-[14.5px] leading-[1.65] text-silver lg:text-[15.5px]">

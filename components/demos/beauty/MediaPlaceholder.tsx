@@ -47,7 +47,7 @@ export function MediaPlaceholder({
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 opacity-[0.08] transition-opacity duration-500 ease-eleva group-hover:opacity-[0.12]"
+        className="absolute inset-0 opacity-[0.08] transition-opacity duration-500 ease-bran group-hover:opacity-[0.12]"
         style={{
           backgroundImage:
             "repeating-linear-gradient(135deg, #231f1b 0px, #231f1b 1px, transparent 1px, transparent 14px)",
@@ -55,7 +55,7 @@ export function MediaPlaceholder({
       />
       <div aria-hidden="true" className="absolute inset-0 flex items-center justify-center">
         <span
-          className="flex size-14 items-center justify-center rounded-full border font-display text-lg font-medium transition-transform duration-500 ease-eleva group-hover:scale-105"
+          className="flex size-14 items-center justify-center rounded-full border font-display text-lg font-medium transition-transform duration-500 ease-bran group-hover:scale-105"
           style={{ borderColor: markColor[tint], color: markColor[tint] }}
         >
           L

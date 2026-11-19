@@ -48,7 +48,7 @@ function LumeFooter() {
       <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-1 border-t border-[#f6f1e9]/10 pt-6 text-xs text-[#897d6c] sm:flex-row sm:items-center sm:justify-between">
         <p>Todos los datos de esta demo son ficticios.</p>
         <Link href="/" className="text-[#a79b8a] underline-offset-4 transition-colors hover:text-[#c9ab83] hover:underline focus-visible:outline-2 focus-visible:outline-[#c9ab83]">
-          Digital experience by ELEVA ↗
+          Digital experience by BRAN. ↗
         </Link>
       </div>
     </footer>
@@ -215,7 +215,7 @@ export function LumeBeauty() {
               {galleryItems.map((item, index) => (
                 <Reveal key={item.label} delay={index * 60} className="mb-4 block break-inside-avoid">
                   <div className={`${item.aspect} group relative overflow-hidden rounded-xl`}>
-                    <Image src={item.image} alt={item.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-700 ease-eleva group-hover:scale-[1.03]" />
+                    <Image src={item.image} alt={item.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-700 ease-bran group-hover:scale-[1.03]" />
                     <span className="absolute bottom-3 left-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-white drop-shadow">{item.label}</span>
                   </div>
                 </Reveal>
@@ -259,14 +259,14 @@ export function LumeBeauty() {
             <div className="mt-10 grid gap-5 sm:grid-cols-3">
               {specialists.map((specialist, index) => (
                 <Reveal as="article" key={specialist.name} delay={index * 90} className="group">
-                  <div className="relative aspect-[3/4] overflow-hidden rounded-xl transition-transform duration-700 ease-eleva group-hover:scale-[1.02]">
+                  <div className="relative aspect-[3/4] overflow-hidden rounded-xl transition-transform duration-700 ease-bran group-hover:scale-[1.02]">
                     <Image src={specialist.image} alt={specialist.alt} fill sizes="(max-width: 640px) 100vw, 33vw" className="object-cover" />
                   </div>
                   <h3 className="mt-4 text-lg font-medium text-[#231f1b]">{specialist.name}</h3>
                   <p className="mt-1 text-sm text-[#8c6a3c]">{specialist.role}</p>
                   <span
                     aria-hidden="true"
-                    className="mt-3 block h-px w-8 bg-[#a9824f]/60 transition-[width] duration-500 ease-eleva group-hover:w-16"
+                    className="mt-3 block h-px w-8 bg-[#a9824f]/60 transition-[width] duration-500 ease-bran group-hover:w-16"
                   />
                   <p className="mt-3 text-[10px] uppercase tracking-wider text-[#8a7f6f]">Perfil ficticio de demostración</p>
                 </Reveal>

@@ -3,7 +3,7 @@ import { Eyebrow } from "./Eyebrow";
 import { Reveal } from "./Reveal";
 
 /**
- * Cabecera de sección: eyebrow + H2 a 40px + párrafo de entrada a la derecha.
+ * Cabecera de sección: eyebrow + H2 a 40px (Sora Bold) + párrafo de entrada a la derecha.
  * El H2 de sección es 40px, nunca el tamaño del H1 — así se mantiene la
  * distancia entre "título de página" y "título de sección".
  */
@@ -37,7 +37,7 @@ export function SectionHeader({
           id={id}
           className={cn(
             "text-[30px] leading-[1.12] sm:text-4xl xl:text-[40px] xl:leading-[1.1]",
-            isPaper ? "text-paper-ink" : "text-white",
+            isPaper ? "text-paper-ink" : "text-ink",
           )}
         >
           {title}

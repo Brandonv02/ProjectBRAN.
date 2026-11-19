@@ -2,7 +2,7 @@ import type { ComponentPropsWithoutRef, ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 /**
- * Botón del sistema. Altura 48 por defecto, radio 10, transición 250ms.
+ * Botón del sistema. Altura 48 por defecto, redondo (manual: nada cuadrado), transición 250ms.
  * Objetivo táctil mínimo 48×48 en móvil (size "sm" solo en escritorio).
  */
 
@@ -10,18 +10,18 @@ type Variant = "primary" | "ghost" | "inverse";
 type Size = "sm" | "md" | "lg";
 
 const base =
-  "inline-flex items-center justify-center gap-2.5 rounded-control border font-semibold leading-none " +
-  "transition-[transform,box-shadow,background-color,border-color,color] duration-[250ms] ease-eleva " +
+  "inline-flex items-center justify-center gap-2.5 rounded-full border font-semibold leading-none " +
+  "transition-[transform,box-shadow,background-color,border-color,color] duration-[250ms] ease-bran " +
   "select-none whitespace-nowrap";
 
 const variants: Record<Variant, string> = {
   primary:
-    "border-transparent bg-accent-solid text-white shadow-[0_16px_40px_-14px_rgba(91,107,255,0.95)] " +
-    "hover:bg-accent-bright hover:-translate-y-0.5 hover:shadow-[0_24px_52px_-14px_rgba(91,107,255,1)] " +
+    "border-transparent bg-accent-solid text-carbon shadow-[0_16px_40px_-14px_rgba(255,95,26,0.8)] " +
+    "hover:bg-accent-bright hover:-translate-y-0.5 hover:shadow-[0_24px_52px_-14px_rgba(255,95,26,0.95)] " +
     "active:translate-y-0 active:bg-accent-deep",
   ghost:
     "border-line-strong bg-transparent text-ink " +
-    "hover:border-line-hover hover:bg-surface hover:text-white hover:-translate-y-0.5 " +
+    "hover:border-line-hover hover:bg-surface hover:text-ink hover:-translate-y-0.5 " +
     "active:translate-y-0",
   inverse:
     "border-transparent bg-white text-carbon " +
@@ -82,7 +82,7 @@ export function Button({
           {...(anchorProps as ComponentPropsWithoutRef<"span">)}
           role="link"
           aria-disabled="true"
-          data-eleva-placeholder="contacto"
+          data-bran-placeholder="contacto"
           className={cn(classes, "cursor-not-allowed")}
         >
           {children}

@@ -63,7 +63,7 @@ export function MediaPlaceholder({
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 opacity-[0.1] transition-opacity duration-500 ease-eleva group-hover:opacity-[0.16]"
+        className="absolute inset-0 opacity-[0.1] transition-opacity duration-500 ease-bran group-hover:opacity-[0.16]"
         style={{
           backgroundImage: `radial-gradient(${dotColor[tint]} 1px, transparent 1.4px)`,
           backgroundSize: "15px 15px",
@@ -71,7 +71,7 @@ export function MediaPlaceholder({
       />
       <div aria-hidden="true" className="absolute inset-0 flex items-center justify-center">
         <span
-          className="flex size-14 items-center justify-center rounded-full border transition-transform duration-500 ease-eleva group-hover:scale-105"
+          className="flex size-14 items-center justify-center rounded-full border transition-transform duration-500 ease-bran group-hover:scale-105"
           style={{ borderColor: markColor[tint] }}
         >
           <UtensilsMark color={markColor[tint]} />

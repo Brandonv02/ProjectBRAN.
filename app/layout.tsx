@@ -1,12 +1,26 @@
 import type { Metadata, Viewport } from "next";
-import { Poppins } from "next/font/google";
+import { Anta, Manrope, Sora } from "next/font/google";
 import { site, siteUrl, siteUrlIsPlaceholder } from "@/lib/site";
 import "./globals.css";
 
-const poppins = Poppins({
+// Tipografía del manual (pág. 10): Sora titulares, Manrope textos, Anta firma y etiquetas.
+const sora = Sora({
+  subsets: ["latin"],
+  variable: "--font-sora",
+  display: "swap",
+});
+
+const manrope = Manrope({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins",
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+const anta = Anta({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-anta",
   display: "swap",
 });
 
@@ -22,13 +36,13 @@ export const metadata: Metadata = {
   creator: site.founder,
   publisher: site.name,
   keywords: [
-    "diseño web Colombia",
-    "desarrollo web para negocios",
-    "landing page profesional",
-    "páginas web para pymes",
-    "agencia digital Colombia",
-    "Next.js",
-    "ELEVA",
+    "desarrollo web Colombia",
+    "sistema de ventas e inventario",
+    "app a la medida",
+    "página web para negocios",
+    "digitalizar un negocio",
+    "datos seguros para negocios",
+    "BRAN.",
   ],
   category: "technology",
   ...(!siteUrl ? {} : { alternates: { canonical: "/" } }),
@@ -71,7 +85,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0D0F14",
+  themeColor: "#0A0A0A",
   colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
@@ -81,7 +95,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="es" className={poppins.variable} suppressHydrationWarning>
+    <html lang="es" className={`${sora.variable} ${manrope.variable} ${anta.variable}`} suppressHydrationWarning>
       <head>
         {/* Marca que hay JavaScript antes del primer pintado. Las entradas
             al scroll solo se ocultan si esta clase existe, así que sin JS
@@ -95,7 +109,7 @@ export default function RootLayout({
       <body className="bg-carbon text-ink antialiased">
         <a
           href="#contenido"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-control focus:bg-accent-solid focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-white"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-control focus:bg-accent-solid focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-carbon"
         >
           Saltar al contenido
         </a>

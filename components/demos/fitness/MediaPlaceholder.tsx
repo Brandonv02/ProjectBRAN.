@@ -59,12 +59,12 @@ export function MediaPlaceholder({
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 opacity-90 transition-opacity duration-500 ease-eleva group-hover:opacity-100"
+        className="absolute inset-0 opacity-90 transition-opacity duration-500 ease-bran group-hover:opacity-100"
         style={{ backgroundImage: speedLines }}
       />
       <div aria-hidden="true" className="absolute inset-0 flex items-center justify-center">
         <span
-          className="flex size-14 items-center justify-center rounded-md border transition-transform duration-500 ease-eleva group-hover:scale-105"
+          className="flex size-14 items-center justify-center rounded-md border transition-transform duration-500 ease-bran group-hover:scale-105"
           style={{ borderColor: `${markColor[tint]}55` }}
         >
           <BoltMark color={markColor[tint]} />

@@ -2,8 +2,8 @@ import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 /**
- * Card del sistema: radio 16, borde 1px, hover eleva 2px.
- * `featured` es la variante azul con halo (plan destacado).
+ * Card del sistema: radio 24, borde 1px, hover eleva 2px.
+ * `featured` es la variante naranja con halo (plan destacado).
  */
 export function Card({
   featured = false,
@@ -20,9 +20,9 @@ export function Card({
   return (
     <div
       className={cn(
-        "rounded-card border transition-[transform,border-color,background-color,box-shadow] duration-[250ms] ease-eleva",
+        "rounded-card border transition-[transform,border-color,background-color,box-shadow] duration-[250ms] ease-bran",
         featured
-          ? "border-accent/50 bg-surface shadow-[0_40px_90px_-34px_rgba(91,107,255,0.75)]"
+          ? "border-accent/50 bg-surface shadow-[0_40px_90px_-34px_rgba(255,95,26,0.55)]"
           : "border-line bg-surface",
         interactive &&
           !featured &&

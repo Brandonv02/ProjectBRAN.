@@ -36,14 +36,19 @@ export const siteUrl = normalizeSiteUrl(env.siteUrl);
 export const siteUrlIsPlaceholder = !siteUrl;
 
 export const site = {
-  name: "ELEVA",
-  legalName: "ELEVA",
-  tagline: "Digital solutions for businesses",
-  title: "ELEVA — Elevamos negocios con tecnología",
+  name: "BRAN.",
+  legalName: "Brandon Vides",
+  /** Frase de firma del manual de marca (portada). */
+  tagline: "Tecnología a la medida, sin peros.",
+  /** Descriptor corto para etiquetas. */
+  descriptor: "Desarrollo digital",
+  /** Idea central de marca (manual pág. 02). */
+  idea: "Crecer sin tantos peros.",
+  title: "BRAN. — Tecnología a la medida, sin peros",
   description:
-    "Diseñamos y desarrollamos soluciones digitales que ayudan a los negocios a verse mejor, conectar con sus clientes y crecer. Landing pages, sitios completos y desarrollos a medida desde $890.000 COP.",
+    "Convierto los procesos manuales de tu negocio en una herramienta digital clara, segura y fácil de usar. Webs profesionales, sistemas de ventas e inventario y apps a la medida, desde Colombia.",
   founder: "Brandon Vides",
-  founderRole: "Founder & Developer",
+  founderRole: "Desarrollador web y móvil",
   country: "Colombia",
   locale: "es_CO",
   googleVerification: env.googleVerification || undefined,

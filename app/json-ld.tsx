@@ -1,33 +1,25 @@
-import { services, carePlans } from "@/lib/content";
+import { services } from "@/lib/content";
 import { contact, site, siteUrl, socialProfiles } from "@/lib/site";
 
 /**
  * Datos estructurados.
  *
  * Solo se emite lo que es real: nombre, descripción, fundador, país y la
- * oferta de servicios con sus precios aprobados. Teléfono, dirección y
+ * escalera de servicios (sin precios). Teléfono, dirección y
  * correo se omiten mientras sean placeholders — no se publica un dato
  * de contacto inventado en el schema.
  */
 export function JsonLd() {
   if (!siteUrl) return null;
-  const offers = [
-    ...services.map((service) => ({
-      "@type": "Offer",
-      name: `ELEVA ${service.eyebrow.replace("ELEVA ", "").toUpperCase()}`,
+  // Sin precios: el manual de marca no los define y no se inventan.
+  const offers = services.map((service) => ({
+    "@type": "Offer",
+    itemOffered: {
+      "@type": "Service",
+      name: `${service.extension} — ${service.name}`,
       description: service.summary,
-      price: service.priceValue,
-      priceCurrency: "COP",
-      ...(service.pricePrefix ? { priceSpecification: { "@type": "PriceSpecification", minPrice: service.priceValue, priceCurrency: "COP" } } : {}),
-    })),
-    ...carePlans.map((plan) => ({
-      "@type": "Offer",
-      name: `ELEVA CARE ${plan.name.toUpperCase()}`,
-      description: plan.body,
-      price: plan.priceValue,
-      priceCurrency: "COP",
-    })),
-  ];
+    },
+  }));
 
   const organization = {
     "@context": "https://schema.org",
@@ -47,12 +39,11 @@ export function JsonLd() {
     },
     knowsAbout: [
       "Desarrollo web",
-      "Diseño de interfaces",
-      "E-commerce",
-      "Automatización de procesos",
-      "SEO técnico",
+      "Desarrollo de aplicaciones",
+      "Sistemas de ventas e inventario",
+      "Digitalización de procesos",
+      "Seguridad de datos para negocios",
     ],
-    priceRange: "$$",
     ...(socialProfiles.length > 0 ? { sameAs: socialProfiles } : {}),
     ...(contact.email.href
       ? { email: contact.email.label }
@@ -60,7 +51,7 @@ export function JsonLd() {
     ...(contact.phone.isPlaceholder ? {} : { telephone: contact.phone.label }),
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Servicios de ELEVA",
+      name: "Servicios de BRAN.",
       itemListElement: offers,
     },
   };

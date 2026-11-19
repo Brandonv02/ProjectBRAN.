@@ -6,9 +6,9 @@ import { processSteps } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
 /**
- * Proceso — banda clara.
+ * Proceso — banda clara (Gris niebla). El naranja solo en formas, nunca en texto.
  * La regla superior de cada paso crece 20 → 40 → 60 → 80 → 100%:
- * es el único sitio donde la metáfora del ascenso se hace literal.
+ * el avance del proyecto, visible.
  */
 export function Process() {
   return (
@@ -18,8 +18,8 @@ export function Process() {
           id="proceso-titulo"
           tone="paper"
           eyebrow="Proceso"
-          title="Cómo trabajamos."
-          lead="Cinco etapas, siempre las mismas. Sabes en qué punto está tu proyecto en cualquier momento."
+          title="Cómo trabajo."
+          lead="Cinco pasos, siempre los mismos. Sabes en qué punto está tu proyecto en cualquier momento."
           className="mb-10 lg:mb-14"
         />
 
@@ -46,8 +46,8 @@ export function Process() {
                 </div>
                 <p
                   className={cn(
-                    "pt-1 font-mono text-xs font-medium tracking-[0.1em]",
-                    isFirst ? "text-accent" : "text-paper-muted",
+                    "pt-1 font-label text-xs tracking-[0.1em]",
+                    isFirst ? "text-paper-ink" : "text-paper-muted",
                   )}
                 >
                   {step.number}

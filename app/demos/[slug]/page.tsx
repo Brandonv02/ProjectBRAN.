@@ -10,24 +10,24 @@ type ActiveSlug = "barber" | "beauty" | "restaurant" | "fitness";
 
 const activeMetadata: Record<ActiveSlug, { title: string; description: string; path: string; images?: string[] }> = {
   barber: {
-    title: "NERO BARBER — Corte. Estilo. Presencia. | ELEVA",
-    description: "Experiencia web premium para NERO BARBER. Demo comercial desarrollada por ELEVA.",
+    title: "NERO BARBER — Corte. Estilo. Presencia. | BRAN.",
+    description: "Experiencia web premium para NERO BARBER. Demo comercial desarrollada por BRAN..",
     path: "/demos/barber",
     images: ["/demos/nero/hero.webp"],
   },
   beauty: {
-    title: "LUMÉ BEAUTY STUDIO — Belleza que se siente como tú. | ELEVA",
-    description: "Experiencia web premium para LUMÉ BEAUTY STUDIO. Demo comercial desarrollada por ELEVA.",
+    title: "LUMÉ BEAUTY STUDIO — Belleza que se siente como tú. | BRAN.",
+    description: "Experiencia web premium para LUMÉ BEAUTY STUDIO. Demo comercial desarrollada por BRAN..",
     path: "/demos/beauty",
   },
   restaurant: {
-    title: "CASA NOMA — Sabores que cuentan historias. | ELEVA",
-    description: "Experiencia web premium para CASA NOMA. Demo comercial desarrollada por ELEVA.",
+    title: "CASA NOMA — Sabores que cuentan historias. | BRAN.",
+    description: "Experiencia web premium para CASA NOMA. Demo comercial desarrollada por BRAN..",
     path: "/demos/restaurant",
   },
   fitness: {
-    title: "VOLT ATHLETICS — Train With Purpose. | ELEVA",
-    description: "Experiencia web premium para VOLT ATHLETICS. Demo comercial desarrollada por ELEVA.",
+    title: "VOLT ATHLETICS — Train With Purpose. | BRAN.",
+    description: "Experiencia web premium para VOLT ATHLETICS. Demo comercial desarrollada por BRAN..",
     path: "/demos/fitness",
   },
 };
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: { absolute: title },
     description,
     ...(siteUrl ? { alternates: { canonical: path } } : {}),
-    openGraph: { type: "website", locale: "es_CO", siteName: "ELEVA", title, description, ...(siteUrl && images ? { url: path, images } : {}) },
+    openGraph: { type: "website", locale: "es_CO", siteName: "BRAN.", title, description, ...(siteUrl && images ? { url: path, images } : {}) },
     twitter: { card: "summary_large_image", title, description, ...(siteUrl && images ? { images } : {}) },
   };
 }
