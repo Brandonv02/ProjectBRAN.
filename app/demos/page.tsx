@@ -117,7 +117,7 @@ export default function DemosPage() {
       <main id="contenido">
         {/* HERO */}
         <section className="relative overflow-hidden border-b border-line-soft pb-20 pt-32 sm:pb-24 sm:pt-40 xl:pb-28 xl:pt-48">
-          <LightLine className="-right-24 -top-10 h-[420px] w-[520px] opacity-80 lg:right-0 lg:top-4 lg:h-[560px] lg:w-[700px]" />
+          <LightLine className="hidden lg:block lg:right-0 lg:top-4 lg:h-[560px] lg:w-[700px] opacity-80" />
 
           <Container className="relative">
             <Reveal>

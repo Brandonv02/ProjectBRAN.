@@ -19,7 +19,7 @@ export function Hero() {
       aria-labelledby="hero-titulo"
       className="relative overflow-hidden border-b border-line-soft pb-20 pt-28 md:pb-28 md:pt-32 xl:pb-32 xl:pt-44"
     >
-      <LightLine className="-right-24 -top-10 h-[420px] w-[520px] opacity-80 lg:-right-10 lg:top-4 lg:h-[560px] lg:w-[700px]" />
+      <LightLine className="hidden lg:block lg:-right-10 lg:top-4 lg:h-[560px] lg:w-[700px] opacity-80" />
 
       <Container className="relative">
         <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-14 xl:grid-cols-[560px_580px] xl:gap-15">

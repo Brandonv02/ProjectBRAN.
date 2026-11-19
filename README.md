@@ -2,7 +2,7 @@
 
 Web oficial de BRAN. — *Tecnología a la medida, sin peros.*
 Marca de Brandon, desarrollador web y móvil. Identidad definida en el
-**Manual de marca BRAN. 2026 (V.01)** (`Manual de marca — Brandon (1).pdf`).
+**Manual de marca BRAN. 2026 (V.01)** (`docs/manual-de-marca-bran-2026.pdf`).
 
 Next.js 15 (App Router) · TypeScript · Tailwind CSS v4.
 
@@ -73,7 +73,6 @@ lib/
   content.ts  Escalera de servicios (sin precios), proceso, problemas
   utils.ts    cn()
 
-design/       Artboards de la marca anterior (ELEVA). Obsoletos: no entran en el build
 ```
 
 ### Dónde se cambia cada cosa
